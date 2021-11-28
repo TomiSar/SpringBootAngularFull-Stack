@@ -30,7 +30,7 @@
 * ng v
 * npm start runs on http://localhost:4200/
 
-## add proxy URL in SpringBoot server
+## add proxy URL in SpringBoot server Angular endpoint
 * http://localhost:4200/server/api/v1/bikes
 
 ## Create bike service in bike-ui
@@ -43,3 +43,20 @@
 * Network bikes service show http://localhost:4200/server/api/v1/bikes
 * Preview shows JSON payload
 * http://localhost:4200/admin
+
+## Create components home component in bike-ui 
+* ng g component components/home
+
+## Create view-registration component in bike-ui 
+* ng g component components/view-registration
+
+## Angular dependencies
+* npm install bootstrap@4.0.0-beta.2 --save
+* npm install @angular-devkit/core --save
+* npm install express-http-proxy --save
+* npm install cors --save
+* npm install port --save
+
+## Make production buil with Angular CLI and run DEV server
+* ng build --prod
+* node server.js
