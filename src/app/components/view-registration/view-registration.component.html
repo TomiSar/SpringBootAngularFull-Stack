@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <a class="btn btn=primary" routerLink="/admin">Back to List</a>
+        <a class="btn btn=primary" routerLink="/">Back to Home</a>
+    </div>
+    <div>
+        <div class="form-group">
+            <!-- <label class="form-control">Buyer Name: {{bikeReg.name}}</label> -->
+            <label>Buyer Name</label>
+            <div class="form-control">{{bikeReg.name}}</div>
+        </div>
+        <div class="form-group">
+            <!-- <label class="form-control">Email: {{bikeReg.email}}</label> -->
+            <label>Email</label>
+            <div class="form-control">{{bikeReg.email}}</div>
+        </div>
+        <div class="form-group">
+            <!-- <label class="form-control">Phone: {{bikeReg.phone}}</label> -->
+            <label>Phone</label>
+            <div class="form-control">{{bikeReg.phone}}</div>
+        </div>
+        <div class="form-group">
+            <!-- <label class="form-control">Bike Model: {{bikeReg.model}}</label> -->
+            <label>Bike Model</label>
+            <div class="form-control">{{bikeReg.model}}</div>
+        </div>
+        <div class="form-group">
+            <!-- <label class="form-control">Bike Serial Number: {{bikeReg.serialNumber}}</label> -->
+            <label>Bike Serial Number</label>
+            <div class="form-control">
+                {{bikeReg?.serialNumber}}
+            </div>
+        </div>
+        <div class="form-group">
+            <!-- <label class="form-control">Purchase Price: {{bikeReg.purchasePrice}}</label> -->
+            <label>Purchase Price</label>
+            <div class="form-control">{{bikeReg.purchasePrice}}</div>
+        </div>
+        <div class="form-group">
+            <!-- <label class="form-control">Purchase Date: {{bikeReg.purchaseDate}}</label> -->
+            <label>Purchase Date</label>
+            <div class="form-control">{{bikeReg.purchaseDate}}</div>
+        </div>
+    </div>
+</div>
