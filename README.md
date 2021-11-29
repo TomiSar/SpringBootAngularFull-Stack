@@ -3,11 +3,8 @@
 ## Create Spring application template
 * https://start.spring.io/
 
-## Running application from command line
-### Build Spring Boot Project with Maven: 
+## Running application from command line. Build and Run Spring Boot app using Maven
 * mvn install or mvn clean install
-
-### Run Spring Boot app using Maven:
 * mvn spring-boot:run
 * Spring-boot running on http://localhost:8080/
 
@@ -57,6 +54,7 @@
 * npm install cors --save
 * npm install port --save
 
-## Make production buil with Angular CLI and run DEV server
+## Make production buil with Angular CLI and run DEV server run on addresses mapped in backend-sever 
 * ng build --prod
 * node server.js
+* localhost:4200
