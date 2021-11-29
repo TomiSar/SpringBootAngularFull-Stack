@@ -1,27 +1,62 @@
-# BikeUi
+# Full-Stack Aplication with SpringBoot and Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
+## Create Spring application template
+* https://start.spring.io/
 
-## Development server
+## Running application from command line
+### Build Spring Boot Project with Maven: 
+* mvn install or mvn clean install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Run Spring Boot app using Maven:
+* mvn spring-boot:run
+* Spring-boot running on http://localhost:8080/
 
-## Code scaffolding
+## Endpoints can be tested with Postman using GET
+* http://localhost:8080/api/v1/bikes
+* http://localhost:8080/api/v1/bikes/{id}
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Creating Database with sqlite3 (https://github.com/dlbunker/ps-spring-boot-and-angular/tree/master/sql)
+* sqlite3 bike.db
+* sqlite> .help
+* sqlite> .tables
 
-## Build
+## Angular packageManager
+* ng config -g cli.packageManager yarn
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Angular create new project in bike folder and add routing switch to project
+* ng new bike-ui --routing=true
+* Stylesheet use CSS
+* cd bike-ui
+* ng v
+* npm start runs on http://localhost:4200/
 
-## Running unit tests
+## add proxy URL in SpringBoot server Angular endpoint
+* http://localhost:4200/server/api/v1/bikes
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Create bike service in bike-ui
+* ng g service services/bike
 
-## Running end-to-end tests
+## Create admin component in bike-ui 
+* ng g component components/admin
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## show bikes on browser after creating components
+* Network bikes service show http://localhost:4200/server/api/v1/bikes
+* Preview shows JSON payload
+* http://localhost:4200/admin
 
-## Further help
+## Create components home component in bike-ui 
+* ng g component components/home
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Create view-registration component in bike-ui 
+* ng g component components/view-registration
+
+## Angular dependencies
+* npm install bootstrap@4.0.0-beta.2 --save
+* npm install @angular-devkit/core --save
+* npm install express-http-proxy --save
+* npm install cors --save
+* npm install port --save
+
+## Make production buil with Angular CLI and run DEV server
+* ng build --prod
+* node server.js
